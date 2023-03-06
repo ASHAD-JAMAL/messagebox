@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <title>Message</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo"><img src="/MessageBox/images/ashad_photo.jpg" alt="logo"></div>
+            <h5>Ashad Jamal <br><span>online</span></h5>
+        </nav>
+        <section class="messeges" id="messeges">
+            <div id="demo"></div>
+        </section>
+        
+        <div class="send-div">
+            <div id="m-input-container" onclick="setFocus()">
+                <div onclick="attachment()" id="m-attachment-icon">
+                     <i class="material-icons">attachment</i>
+                </div>
+                <!-- <div class=""></div> -->
+                <div class="m-input-text-group">
+                    <div id="m-input-text" contenteditable></div>
+                    <div class="m-placeholder" id="input-messeges">
+                        Type a message
+                    </div>
+                </div>
+            </div>
+            <div onclick="send()" id="m-send-vector-icon">
+                <i class="material-icons">send vector icon</i>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
